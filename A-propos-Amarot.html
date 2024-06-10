@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agence Communication Amarot - A-propos-Amarot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nouvelle-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        .contact-link {
+            color: white !important;
+        }
+    
+        .contact-link:hover {
+            color: gray !important; /* Couleur de survol optionnelle */
+        }
+
+        .text-container-page3 {
+            position: relative;
+            width: 100%;
+            padding: 20px;
+            background-image: url(partage\ \(40\).png); /* Chemin vers votre image de fond */
+            background-position: center; /* Pour centrer l'image de fond */
+            background-repeat: no-repeat; /* Pour éviter la répétition de l'image */
+            height: 700px; /* Pour que le conteneur prenne toute la hauteur de la vue */
+        }
+
+        .welcome-text {
+            position: absolute;
+            top: 120px; /* Ajustez cette valeur pour déplacer verticalement */
+            left: 90px; /* Ajustez cette valeur pour déplacer horizontalement */
+            font-size: 90px; /* Ajustez la taille de la police */
+            font-family: "Lilita One", sans-serif;
+            color: #219ED5; /* Couleur du texte */
+        }
+
+        .digital-agency-text {
+            position: absolute;
+            top: 400px; /* Ajustez cette valeur pour déplacer verticalement */
+            right: 190px; /* Ajustez cette valeur pour déplacer horizontalement */
+            font-size: 50px; /* Ajustez la taille de la police */
+            font-family: "Pacifico", sans-serif;
+            color: #FF7F50; /* Couleur du texte */
+        }
+    
+        /* Vos autres styles CSS */
+    </style>
+
+    <header class="sticky">
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="AMAROT_fin-removebg-preview.png" alt="Logo de The Amarot">
+                </a>
+            </div>
+            <ul class="menu">
+                <li><strong><a href="index.html">Accueil</a></strong></li>
+                <li><strong><a href="Service-Amarot.html">Services</a></strong></li>
+                <li><strong><a href="A-propos-Amarot.html">À propos</a></strong></li>
+                <li><strong><a href="Contact-Amarot.html" class="rounded-link contact-link">Contacter</a></strong></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="cookie-banner" style="display: none;">
+            <p>Nous utilisons des cookies pour vous garantir la meilleure expérience sur notre site web. <a href="privacy-policy.html">En savoir plus</a></p>
+            <button onclick="acceptCookies()">J'accepte</button>
+        </div>
+        <script>
+            function checkCookieConsent() {
+                return document.cookie.split(';').some((item) => item.trim().startsWith('cookie_consent='));
+            }
+        
+            function showCookieBanner() {
+                const banner = document.getElementById('cookie-banner');
+                if (!checkCookieConsent()) {
+                    banner.style.display = 'block';
+                }
+            }
+        
+            function acceptCookies() {
+                document.cookie = "cookie_consent=accepted; max-age=" + 60 * 60 * 24 * 365 + "; path=/"; // 1 an
+                const banner = document.getElementById('cookie-banner');
+                banner.style.display = 'none';
+            }
+        
+            document.addEventListener('DOMContentLoaded', showCookieBanner);
+        </script>
+        <div class="text-container-page3">
+            <h1 class="welcome-text">Bienvenue chez Amarot</h1>
+            <h2 class="digital-agency-text">Votre agence digital</h2>
+        </div>
+        <style>
+            .marquee {
+              width: 100%;
+              line-height: 120px; /* Augmenter pour éviter que le texte soit coupé */
+              background-color: white;
+              font-size: 100px; /* Taille de police conservée */
+              white-space: nowrap;
+              overflow: hidden; /* Ajuster au besoin */
+              box-sizing: border-box;
+              font-weight: 100;
+
+            }
+            .marquee p {
+              display: inline-block;
+              padding-left: 0%;
+              margin-top: 0; /* Réduire l'espace au-dessus du texte */
+              margin-bottom: 0; /* Réduire l'espace en dessous du texte */
+              animation: marquee 500s linear infinite;
+            }
+            .marquee1 p {
+              color: #FF5733;
+              font-family: "Lilita One", sans-serif;
+              font-size: 100px;
+            }
+            .marquee2 p {
+              animation-direction: reverse;
+              color: #33C4FF;
+              font-family: "Lilita One", sans-serif;
+              font-size: 100px;
+            }
+            @keyframes marquee {
+              0%   { transform: translate( 0, 0); }
+              100% { transform: translate(-50%, 0); }
+            }
+          </style>
+          
+          <body>
+            <div class="marquee marquee1">
+              <p><strong>REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • </strong></p>
+            </div>
+            <div class="marquee marquee2">
+              <p><strong>REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • </strong></p>
+            </div>
+          </body>
+
+          <div class="about-us-section-page3 reveal">
+            <h1 class="about-us-title-page3">Qui sommes-nous ?</h1>
+            <p class="about-us-text-page3">
+                <span class="text-orange">Amarot </span><span class="text-blue">est une agence de communication basée à Paris, dédiée à la</span> <span class="text-orange">croissance</span><span class="text-blue"> et au</span> <span class="text-orange">succès</span><span class="text-blue"> de votre entreprise. Nous</span> <span class="text-orange">offrons</span><span class="text-blue"> une gamme complète de </span><span class="text-orange">services</span> <span class="text-blue">allant de la création de contenu à la </span><span class="text-orange">gestion</span><span class="text-blue"> des réseaux sociaux, en passant par le </span><span class="text-orange">développement</span> <span class="text-blue">de stratégies </span><span class="text-orange">marketing</span> <span class="text-blue">sur mesure. Notre </span><span class="text-orange">équipe</span> <span class="text-blue">d'experts est là pour vous </span><span class="text-orange">accompagner</span><span class="text-blue"> à chaque étape de votre parcours.</span>
+            </p>
+        </div>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const revealElements = document.querySelectorAll('.reveal');
+            
+                function reveal() {
+                    const windowHeight = window.innerHeight;
+                    revealElements.forEach(element => {
+                        const elementTop = element.getBoundingClientRect().top;
+                        const elementVisible = 150;
+            
+                        if (elementTop < windowHeight - elementVisible) {
+                            element.classList.add('active');
+                        }
+                    });
+                }
+            
+                window.addEventListener("scroll", reveal);
+                reveal(); // To check the element on load
+            });
+            </script>
+            
+
+            <div class="service-intro">
+                <h2>Découvrez nos <span class="text-orange">services</span> et bien <span class="text-orange">plus encore</span></h2>
+            </div>
+            
+            <div class="clickable-images-section">
+                <div class="clickable-image">
+                    <a href="photographie.html">
+                        <img src="photographe1.jpg" alt="Amarot photographie">
+                    </a>
+                    <div class="image-texts">
+                        <p class="title">Photographies</p>
+                        <p class="subtitle">Nous gérons la mise à jour quotidienne de vos images uniques, à l'image de votre nom.</p>
+                    </div>
+                </div>
+                <div class="clickable-image">
+                    <a href="Social-Media-Amarot.html">
+                        <img src="social media.jpg" alt="Amarot social media">
+                    </a>
+                    <div class="image-texts">
+                        <p class="title">Social Media</p>
+                        <p class="subtitle">Nous gérons l'intégralité de vos réseaux sociaux, ainsi que la garantie d'une bonne gestion. </p>
+                    </div>
+                </div>
+                <div class="clickable-image">
+                    <a href="Stratégie.html">
+                        <img src="stratégie de marque.jpg" alt="Amarot strategie de marque">
+                    </a>
+                    <div class="image-texts">
+                        <p class="title">Stratégie Marketing</p>
+                        <p class="subtitle">Grâce à notre savoir faire, nous contribuons a l'expension de votre marque.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="values-section">
+                <h2 class="values-title">Nos Valeurs</h2>
+                <div class="values-container">
+                    <div class="value-item">
+                        
+                        <h3>Innovation</h3>
+                        <p>Nous nous efforçons d'innover dans chaque projet que nous entreprenons.</p>
+                    </div>
+                    <div class="value-item">
+                        
+                        <h3>Excellence</h3>
+                        <p>Nous nous engageons à fournir des services de la plus haute qualité.</p>
+                    </div>
+                    <div class="value-item">
+                        
+                        <h3>Collaboration</h3>
+                        <p>Nous croyons en la puissance de la collaboration pour atteindre des objectifs communs.</p>
+                    </div>
+                    <div class="value-item">
+                        
+                        <h3>Intégrité</h3>
+                        <p>Nous agissons avec intégrité et transparence dans toutes nos interactions.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="mission-section">
+                <h2 class="mission-title">Notre Mission</h2>
+                <p class="mission-text">
+                    Chez Amarot, notre mission est de vous aider à atteindre vos objectifs commerciaux à travers des stratégies de communication innovantes et efficaces. Nous nous engageons à vous fournir des solutions sur mesure qui reflètent votre vision et vos valeurs, tout en maximisant votre impact sur le marché.
+                </p>
+                <div class="mission-images">
+                    <img src="boulangerie amarot.webp" alt="Image 1" class="mission-image">
+                    <img src="meufpage3amarot.jpg" alt="Image 2" class="mission-image">
+                    <img src="meufspage3amarot.webp" alt="Image 3" class="mission-image">
+                </div>
+            </div>
+            
+
+            <div class="approach-section">
+                <h2 class="approach-title">Notre Approche</h2>
+                <div class="approach-content">
+                    <p class="approach-text">
+                        <span class="text-blue">Chez Amarot, nous adoptons une approche centrée sur le client, en nous assurant que chaque stratégie que nous développons est adaptée à vos besoins uniques. Nous croyons en la collaboration étroite avec nos clients pour garantir que chaque projet reflète leur vision et leurs objectifs.</span>
+                    </p>
+                    <img src="client assure.jpg" alt="Approach Image" class="approach-image">
+                </div>
+            </div>
+            
+            
+            <div class="idea-section">
+                <h2 class="idea-title">Une idée en tête ? Parlez-nous-en</h2>
+            </div>
+            
+            <div class="contact-form-background new-background">
+                <div class="content-wrapper">
+                    <div class="left-text">
+                        <p>Parlez nous de vos projets<br> et de vos envies, nous vous écoutons.</p>
+                    </div>
+                    <div class="contact-form-section">
+                        <form action="submit.php" method="post" class="styled-form">
+                            <label for="name">Nom:</label>
+                            <input type="text" id="name" name="name" required>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                            <label for="phone">Téléphone:</label>
+                            <input type="tel" id="phone" name="phone" required>
+                            <label for="subject">Sujet:</label>
+                            <input type="text" id="subject" name="subject">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message"></textarea>
+                            <label for="appointment_date">Date de rendez-vous:</label>
+                            <input type="datetime-local" id="appointment_date" name="appointment_date">
+                            <input type="submit" value="Envoyer">
+                        </form>
+                    </div>
+                </div>
+            </div>
+               
+          
+          
+          <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const form = document.querySelector('form');
+                form.addEventListener('submit', function(event) {
+                    // Valider les champs si nécessaire
+                    // Exemple : if (!form.name.value) { alert('Name is required'); event.preventDefault(); }
+                });
+            });
+          </script>
+
+<div class="instagram-follow">
+    <h2>Suivez nous sur Instagram</h2>
+</div>
+
+<!-- Section des images cliquables avec titre et texte -->
+<div class="instagram-images">
+    <div class="instagram-image">
+        <a href="https://www.instagram.com/the_amarot/">
+            <img src="Instagram1.jpg" alt="Image 1">
+        </a>
+        <div class="image-details">
+            <h3>Évasion Asiatique</h3>
+            <p>Voyagez à travers les saveurs avec nos plats<br> asiatiques raffinés, photographiés<br> par les experts d'Amarot.</p>
+        </div>
+    </div>
+    <div class="instagram-image">
+        <a href="https://www.instagram.com/the_amarot/">
+            <img src="Instagram11.jpg" alt="Image 2">
+        </a>
+        <div class="image-details">
+            <h3>Cocktails Colorés</h3>
+            <p>Rafraîchissez vos soirées avec quelques<br> cocktails colorés, immortalisés<br> par l'œil expert d'Amarot.</p>
+        </div>
+    </div>
+    <div class="instagram-image">
+        <a href="https://www.instagram.com/the_amarot/">
+            <img src="Instagram111.jpg" alt="Image 3">
+        </a>
+        <div class="image-details">
+            <h3>Délice Italien</h3>
+            <p>Découvrez l'authenticité de l'Italie avec <br>ces pizzas artisanales, capturées<br> à la perfection par Amarot.</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+    </main>
+</body>
+
+
+<footer>
+    <div class="footer-container">
+        <div class="left-section">
+            <img src="AMAROT_fin_Blanc-removebg-preview.png" alt="Logo de l'entreprise NewTech Entreprise" class="footer-logo">
+            <a href="https://www.instagram.com/the_amarot/" target="_blank" class="instagram-link">
+                <img src="instagram_logo.webp" alt="Instagram">
+            </a>
+        </div>
+        <div class="right-section">
+            <div class="contact-section">
+                <h1>Service</h1>
+                <ul>
+                    <li><a href="photographie.html" class="mentionlegale">Photographie</a></li>
+                    <li><a href="Social-Media-Amarot.html" class="mentionlegale">Social Media</a></li>
+                    <li><a href="Stratégie.html" class="mentionlegale">Stratégie de marque</a></li>
+                    
+                </ul>
+            </div>
+            <div class="contact-section">
+                <h1>Informations</h1>
+                <ul>
+                    <li><a href="A-propos-Amarot.html" class="mentionlegale">À Propos de Nous</a></li>
+                    <li><a href="Contact-Amarot.html" class="mentionlegale">Nous Contacter</a></li>
+                    <li><a href="Mentions Légales.html" class="mentionlegale">Mentions Légales</a></li>
+                    <li><a href="Conditions Générale d'utilisation.html" class="mentionlegale">Conditions Générale d'Utilisation</a></li>
+                    <li><a href="Politique de Confidentialité.html" class="mentionlegale">Politique de Confidentialité</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2024 NewTech Entreprise. Tous droits réservés.</p>
+        
+    </div>
+  </footer>
+</html>

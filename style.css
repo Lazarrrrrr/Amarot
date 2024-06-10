@@ -1,0 +1,1472 @@
+body {
+  overflow-x: hidden;
+}
+
+#cookie-banner {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #219ED5; /* Couleur de fond */
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-family: "DM Sans", sans-serif;
+  z-index: 1000; /* Assurez-vous qu'il est au-dessus de tout autre contenu */
+}
+
+#cookie-banner p {
+  display: inline;
+  margin-right: 20px;
+}
+
+#cookie-banner button {
+  background-color: #FF5733;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: "DM Sans", sans-serif;
+}
+
+#cookie-banner a {
+  color:white;
+  font-style: normal;
+  text-decoration: none;
+}
+
+#cookie-banner button:hover {
+  background-color: #E64A19;
+}
+
+body, h1, h2, h3, p, ul {
+  margin: 0;
+  padding: 0;
+  font-family: "Lilita One", sans-serif;
+}
+
+body {
+  font-family: "Lilita One", sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+  position: relative;
+}
+
+.section.with-background {
+  background-image: url('partage (30).png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.accueil-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.accueil-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 500px;
+  font-weight: 100;
+}
+
+.accueil-text h1 {
+  margin-top: -100px;
+  text-align: left;
+  font-size: 100px;
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+  font-weight: 100;
+}
+
+.text-orange {
+  color: #FF7F50;
+}
+
+.text-blue {
+  color: #219ED5;
+}
+
+.lilita {
+  font-family: 'Lilita One'; /* Applique la police Lilita One */
+}
+
+.accueil-image {
+  position: relative;
+  top: -80px;
+  right: -230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.accueil-image a {
+  display: inline-block; /* Affiche le lien en tant que bloc en ligne */
+  position: relative;
+  top: 40px;
+  right: -134px;
+  overflow: hidden; /* S'assure que le lien ne déborde pas */
+  max-width: 53%; /* S'assure que le lien ne dépasse pas la taille de l'image */
+}
+
+
+
+.accueil-image img {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+  display: block;
+  transition: opacity 0.3s ease; /* Transition pour l'effet de survol */
+}
+
+.accueil-image img:hover {
+  opacity: 0.8; /* Réduire l'opacité à 80% lors du survol */
+}
+
+.image-text {
+  font-size: 1.5rem;
+  color:#FF7F50 ;
+  text-align: center;
+  padding-left: 270px;
+  font-family: "Lilita One", sans-serif;
+  font-size: 35px;
+  font-weight: 100;
+  
+}
+
+h3 {
+  font-size: 28px;
+}
+
+p {
+  font-size: 18px;
+} 
+
+
+.with-background {
+  background-image: url(partage\ \(16\).png);
+  background-size: cover;
+  background-position: center; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  height: 80vh;
+  font-size: x-large;
+  margin-top: 100px;
+}
+
+header {
+  background:white;
+  color: black;
+  padding: 30px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+
+}
+
+.clickable-images-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 90px;
+  margin-top: -40px;
+  padding: 20px;
+}
+
+.clickable-image {
+  text-align: left; /* Aligne le texte à gauche */
+  width: 400px; /* Largeur fixe pour assurer le même gabarit */
+}
+
+.clickable-image img {
+  width: 100%;
+  height: auto;
+  max-height: 500px; /* Hauteur maximale pour maintenir le même gabarit */
+  transition: transform 0.3s ease;
+  object-fit: cover; /* Assure que l'image couvre toute la zone */
+}
+
+.clickable-image img:hover {
+  transform: scale(1.05);
+}
+
+.image-texts {
+  margin-top: 10px;
+}
+
+.image-texts .title {
+  font-size: 2.8rem; /* Texte plus grand */
+  font-weight: bold;
+  color: #219ED5;
+  font-weight: 100;
+}
+
+.image-texts .subtitle {
+  font-size: 1.3rem; /* Texte plus grand */
+  color: #219ED5;
+  padding-bottom: 100px;
+  font-weight: 100;
+}
+
+
+
+
+.logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:auto;
+  max-width: 40%;
+  max-height: 40px;
+  }
+
+
+
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  flex: 1;
+  justify-content: center;
+  margin-left: auto;
+  
+}
+
+.menu li {
+  margin: 0 10px;
+  
+}
+
+.menu li a {
+  color:#219ED5;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 50;
+  
+}
+
+.menu li a:hover {
+  color: gray;
+}
+.rounded-link {
+  border: 2px; /* La couleur de la bordure */
+  border-radius: 80px; /* L'arrondi de la bordure */
+  padding: 5px 10px; /* Le padding à l'intérieur du lien */
+  display: inline-block; /* Pour permettre le padding et le border-radius */
+  background-color:#219ED5 ; /* La couleur de fond du lien */
+  color: white; /* La couleur du texte du lien */
+  text-decoration: none; /* Enlève le soulignement du lien */
+}
+
+.contact-link {
+  color: white;
+}
+
+.rounded-link:hover {
+  background-color: #219ED5; /* Couleur de fond au survol */
+  border-color: #219ED5; /* Couleur de la bordure au survol */
+}
+.section {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #FF7F50; /* Couleur du bouton */
+  color: white; /* Couleur du texte */
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 100px;
+  margin-top: 20px; /* Espacement au-dessus du bouton */
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  opacity: 98%;
+  background-color: #219ED5;
+}
+
+
+
+.two-column-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: white;
+  color:black;
+  padding: 100px 0px;
+  margin-bottom: 0px;
+  height: 300px;
+  
+}
+
+
+.right-column {
+  flex: 1;
+  margin-left: 90px; /* Augmenter la marge à gauche */
+  font-weight: 100;
+}
+
+.left-column, .right-column {
+  flex: 1;
+  padding:100px;
+  font-weight: 100;
+}
+
+.special-text {
+  margin-left: 120px; /* Adjust the value to move the text to the right */
+  font-weight: 100;
+
+}
+
+.special-text2 {
+  margin-right: 180px;
+  font-weight: 100;
+}
+
+
+
+
+
+.image-container {
+  display: flex;
+  justify-content: space-around; /* Répartir les images uniformément */
+  align-items: center; /* Aligner les images verticalement */
+  background-image: url(partage22.png);
+  padding: 20px; /* Ajouter de l'espace autour des images */
+  margin-top: 0px;
+}
+
+.image-container img {
+  max-width: 40%; /* Réduire la taille des images */
+  margin: 10px; /* Espacer les images */
+}
+.image-container img:nth-child(2) {
+  margin-top:700px; /* Décale l'image vers le bas */
+  max-width: 30%;
+}
+
+
+/* Ajoutez ces styles si vous avez une barre de recherche spécifique à styliser */
+.search-bar {
+  height: 50px; /* Double de la hauteur par défaut */
+  /* Autres styles nécessaires pour la barre de recherche */
+}
+
+.flex-container {
+  display: flex;
+  align-items: center; /* Alignement vertical des éléments */
+  justify-content: space-between; /* Espacement entre les éléments */
+  margin-bottom: 20px; /* Espace entre chaque section */
+}
+
+.image-left {
+  order: -1; /* Place l'image à gauche */
+}
+
+.image-right {
+  order: 1; /* Place l'image à droite */
+}
+
+.flex-container img {
+  max-width: 50%; /* Taille maximale de l'image */
+  margin: 10px; /* Espacement autour de l'image */
+}
+
+.flex-content {
+  flex-grow: 1; /* Permet au contenu textuel d'occuper l'espace disponible */
+  text-align: left; /* Alignement du texte à gauche */
+}
+
+/* Vos autres styles... */
+
+.images-container {
+  display: flex;
+  justify-content: center; /* Centre les images horizontalement */
+  gap: 10px; /* Ajoute un espacement entre les images */
+}
+
+.images-container img {
+  max-width: 30%; /* Ajuste la taille des images si nécessaire */
+}
+
+.text-align-left {
+  text-align: left;
+  padding-left: 20px; /* Ajustez selon vos besoins */
+}
+
+.text-align-right {
+  text-align: right;
+  padding-right: 20px; /* Ajustez selon vos besoins */
+}
+
+.central-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left; /* Centre le texte horizontalement */
+  margin-top: 40px; /* Espacement au-dessus du texte */
+  margin-bottom: 40px; /* Espacement en dessous du texte */
+  background-color: white;
+  padding: 40px 0;
+  margin: 0;
+  height: 100px;
+  font-weight: 100;
+}
+
+.sticky {
+position: fixed; /* Fixe l'en-tête en haut de la page */
+top: 0; /* Aucun espace entre le haut de la page et l'en-tête */
+width: 100%; /* L'en-tête occupe toute la largeur de la page */
+z-index: 1000; /* S'assure que l'en-tête reste au-dessus des autres éléments */
+}
+
+body {
+padding-top: 70px; /* La valeur doit être égale ou supérieure à la hauteur de votre barre de navigation */
+}
+
+.center-text {
+text-align: center; /* Centre le texte horizontalement */
+margin-top: 40px; /* Espacement au-dessus du texte */
+margin-bottom: 40px; /* Espacement en dessous du texte */
+padding: 20px 0; /* Ajoute un padding vertical pour plus d'espace */
+background-color: white; /* Couleur de fond si nécessaire */
+font-size: 30px;
+}
+
+.flex-container {
+padding: 20px; /* Ajoute un padding autour du conteneur flex pour éloigner les éléments des bords */
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-bottom: 20px;
+}
+
+.flex-container img {
+margin: 20px; /* Agrandit la marge autour des images dans le conteneur flex */
+}
+
+.images-container {
+justify-content: space-around; /* Répartit l'espace autour des images de manière plus uniforme */
+padding: 20px; /* Ajoute un padding autour du conteneur d'images */
+}
+
+.flex-container img {
+max-width: 30%; /* Taille maximale de l'image */
+
+}
+
+.image-left, .image-right {
+flex-basis: 30%; /* Contrôle la base de la taille de l'image */
+margin: 40px; /* Espacement entre l'image et le texte */
+}
+
+.flex-content {
+flex-grow: 1;
+text-align: left;
+padding: 0 20px; /* Ajoute du padding autour du texte pour créer de l'espace */
+}
+
+.contact-section {
+text-align: center; /* Centre le contenu */
+margin-top: 50px; /* Espacement avec le bloc précédent */
+padding: 20px; /* Ajoute du padding pour l'espace intérieur */
+background-color: rgba(232, 232, 255, 1); /* Couleur de fond, si nécessaire */
+}
+
+.contact-section h1 {
+margin-bottom: 40px; /* Espacement entre le titre et les coordonnées */
+font-family: "Lilita One", sans-serif;
+}
+
+.contact-section h3 {
+margin-bottom: 10px; /* Espacement entre les coordonnées */
+font-family: "Lilita One", sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+.mention {
+display: flex; /* Utiliser Flexbox */
+justify-content: center; /* Centrer horizontalement dans le conteneur */
+align-items: center; /* Centrer verticalement dans le conteneur */
+height: 100px; /* Hauteur du viewport pour que le conteneur occupe toute la hauteur de l'écran */
+text-align: center;
+background-color: rgba(232, 232, 255, 1); /* Couleur de fond, ajustez selon vos besoins */
+}
+
+/* Assurez-vous que le <h1> à l'intérieur de .mention prend la taille souhaitée */
+.mention h1 {
+margin: auto; /* Centrer le <h1> à l'intérieur du conteneur flex */
+}
+
+.mention2 {
+background-color: rgba(232, 232, 255, 1);
+margin-bottom: 0%;
+}
+
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+
+
+
+
+.custom-image-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 0%;
+  height: 200px;
+  padding-bottom: 50px;
+}
+
+.custom-image-container img {
+  max-width: 30%; /* Ajustez selon la taille désirée */
+  margin: 10px;
+}
+
+.custom-text-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 0%; /* Ajustez l'espace entre les images et les textes */
+  height: 100px;
+  padding-bottom: 50px;
+}
+
+.custom-text-container p {
+  text-align: center;
+  flex: 1;
+}
+
+/* Appliquez les styles uniquement à ces classes spécifiques */
+.text-container-spacing {
+  margin-bottom: 250px; /* Espacement supplémentaire en bas du bloc de texte */
+}
+
+.image-container-spacing {
+  margin-top: 90px; /* Espacement supplémentaire en haut du bloc d'image */
+}
+
+.left-aligned-text {
+  text-align: left;
+  display: inline-block; /* Pour permettre le centrage */
+  max-width: 80%; /* ou une largeur spécifique selon votre mise en page */
+  margin: 0 auto; /* Ceci centre le bloc */
+  padding-top: 30px;
+  font-size: 22px;
+}
+
+.titredemalade {
+  font-size: 40px;
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+
+.btn-small {
+  padding: 5px 10px; /* Taille plus petite pour le padding */
+  font-size: 30px; /* Taille de police plus petite */
+}
+
+
+.reveal-element {
+  background-color: #219ED5;
+  opacity: 0; /* Rend le bloc invisible initialement */
+  transition: opacity 1s ease-out, transform 1s ease-out; /* Animation douce pour l'apparition */
+  transform: translateY(20px); /* Légère translation vers le bas */
+  margin-bottom: 1;
+  background-color: transparent;
+  
+}
+
+.reveal {
+  opacity: 1; /* Rend le bloc visible */
+  transform: translateY(0); /* Remet le bloc à sa position initiale */
+}
+
+.parent-container {
+  background-color: #219ED5; /* Appliquez le fond bleu au conteneur parent */
+  color:white; 
+  padding-bottom: 80px;
+  padding-top: 80px;
+  font-weight: 100;
+}
+
+.parent-container h1 {
+  font-weight: 100;
+}
+
+.about-us-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background-image: url(partage\ \(3\).png);
+  color: white;
+  font-size: 50px;
+  font-weight: 100;
+}
+
+.about-us-container h1 {
+  margin-bottom: 20px; /* Ajustez selon vos besoins */
+  font-weight: 100;
+}
+
+.about-us-container h3 {
+  margin-bottom: 20px; /* Ajustez selon vos besoins */
+  font-weight: 100;
+}
+
+.btn {
+  /* Vos styles de bouton actuels */
+  padding: 10px 20px; /* Exemple de padding */
+  font-weight: 100;
+}
+
+
+
+.tarifs-container {
+  background-color: #219ED5; /* Couleur de fond bleue */
+  padding: 50px 20px; /* Espacement interne pour la section */
+  text-align: center; /* Centrage du texte pour le titre */
+  color: white; /* Couleur du texte pour le titre */
+  font-weight: 100;
+  }
+
+.tarifs-container h1 {
+  margin-bottom: 40px; /* Espace sous le titre */
+  padding-top: 60px;
+  font-size: 40px;
+  font-weight: 100;
+}
+
+.packs-container {
+  display: flex;
+  justify-content: center; /* Centre les packs horizontalement */
+  gap: 40px; /* Espace entre les packs */
+}
+
+.pack {
+  width: 20%; /* Largeur de chaque pack */
+  height: 600px; /* Hauteur fixe pour chaque pack */
+  background-color: white; /* Fond blanc pour les packs */
+  padding: 30px; /* Espacement interne pour chaque pack */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Ombre pour chaque pack */
+  border-radius: 10px; /* Bords arrondis pour les packs */
+  margin: 20px; /* Espacement externe pour définir plus de distinction */
+  display: flex;
+  flex-direction: column; /* Organise le contenu du pack verticalement */
+  align-items: center; /* Centre le contenu horizontalement */
+  justify-content: space-between; /* Répartit l'espace entre les éléments */
+}
+
+.pack h2 {
+  align-self: center; /* Centre le titre au milieu en haut */
+  margin-bottom: 20px; /* Espacement sous le titre */
+}
+
+.pack a {
+  align-self: center; /* Centre le lien juste en dessous du titre */
+  display: inline-block; /* Affichage en bloc pour un meilleur contrôle */
+  color: white; /* Couleur du texte */
+  background-color: #FF7F50; /* Couleur de fond */
+  padding: 10px 20px; /* Padding à l'intérieur du bouton */
+  border-radius: 30px; /* Coins arrondis */
+  text-decoration: none; /* Supprimer le soulignement */
+  font-size: 16px; /* Ajuster la taille de la police */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Ombre subtile pour un effet 3D */
+  transition: background-color 0.3s, color 0.3s; /* Transition douce pour les effets de survol */
+  margin: 20px 0; /* Espacement autour du lien */
+}
+
+.pack a:hover {
+  background-color: #219ED5; /* Changer la couleur de fond au survol */
+  color: #ffffff; /* Changer la couleur du texte au survol */
+}
+
+.pack p {
+  text-align: center; /* Centrage du texte des paragraphes */
+  margin: 10px 0; /* Espacement autour des paragraphes */
+}
+
+.pack-title-container {
+  height: 100px; /* Hauteur fixe pour le titre */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#FF7F50;
+  font-size: 30px;
+}
+
+.pack-link-container {
+  margin-top: 20px;
+  height: 50px; /* Hauteur fixe pour le lien */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pack-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Répartit l'espace entre les éléments de manière égale */
+  
+}
+
+.pack-content p {
+  text-align: center; /* Texte aligné à droite */
+  margin: 10px; /* Moins d'espacement entre les paragraphes */
+  color:#219ED5;
+  font-size: 21px;
+}
+
+.pack h3 {
+  margin-bottom: 20px; /* Ajoutez un espace en dessous des prix */
+}
+
+
+
+
+
+.price-color {
+  color: #FF7F50; /* La couleur pour le prix */
+}
+
+.per-month-color {
+  color: #219ED5; /* La couleur pour "par mois" */
+}
+
+/* Centrage vertical et horizontal dans la page */
+.div-centered {
+  display: flex;
+  justify-content: center; /* Centrage horizontal */
+  align-items: center; /* Centrage vertical */
+  height: 200px; /* Utilise toute la hauteur de la fenêtre de visualisation */
+  text-align: center;
+  background-image: url(fleche2.png);
+}
+
+
+.big-link {
+  font-size: 24px; /* Taille de la police plus grande */
+  padding: 15px 30px; /* Plus de padding pour un meilleur clic */
+  font-weight: bold; /* Texte en gras pour plus de visibilité */
+}
+
+.pack-link-container a {
+  font-size: 24px; /* Taille de la police plus grande */
+  padding: 15px 30px; /* Plus de padding pour un meilleur clic */
+  font-weight: bold; /* Texte en gras pour plus de visibilité */
+}
+
+
+.hidden {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.visible {
+  max-height: 1000px; /* Ajustez en fonction de la hauteur nécessaire */
+  transition: max-height 0.5s ease;
+}
+
+.button {
+  display: inline-block;
+  padding: 20px 40px;
+  font-size: 24px;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 250px;
+  background-color: #FF7F50;
+  border: none; /* Supprime la bordure */
+}
+
+.paragraph {
+  line-height: 50px; /* Espacement entre les textes */
+}
+
+.first-text {
+  margin-top: 200px; /* Eloignement du premier texte du bouton */
+  font-size: 3rem;
+  margin-bottom:30px;
+}
+
+.titre {
+  font-size: 3rem; /* Définir la taille de la police pour le titre */
+  margin-top:100px;
+  margin-bottom:30px;
+}
+
+.button {
+  color:white;
+}
+
+.button:hover {
+  background-color: #219ED5;
+  
+}
+
+
+.contact-header {
+  text-align: center;
+  margin-top: 150px;
+  background-color: #219ED5;
+  padding-top: 50px;
+  color:white ;
+  font-size: 20px;
+  font-weight: 100;
+  }
+
+  .contact-header h1 {
+    font-weight: 100;
+  }
+
+.contact-form-background {
+  background-image: url(partage\ \(32\).png);
+  padding: 50px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: flex-end; /* Aligns form to the right */
+}
+
+.contact-form-section {
+  display: flex;
+  justify-content: flex-end; /* Aligns form to the right */
+  margin: 200px 0;
+  max-width: 600px;
+  padding: 20px;
+  border: 2px solid #219ED5;
+  border-radius: 15px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-left: auto; /* Ensures it aligns to the right */
+  margin-right: 50px; /* Adds space from the right border */
+}
+
+.styled-form {
+  width: 100%;
+}
+
+.styled-form input[type="text"],
+.styled-form input[type="email"],
+.styled-form input[type="tel"],
+.styled-form input[type="datetime-local"],
+.styled-form textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.styled-form input[type="submit"] {
+  background-color: #FF7F50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.styled-form input[type="submit"]:hover {
+  background-color: #219ED5;
+}
+
+.contact-info-section {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-top: 2px solid #219ED5;
+  margin-top: 20px;
+}
+
+.mentionlegale {
+  color: black;
+  text-decoration: none;
+}
+
+
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Centrer les éléments verticalement */
+  padding: 20px;
+  background-color: #FF7F50;
+  height: 400px;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-right: auto; /* Ajustez la marge selon vos besoins */
+  margin-left: 300px;
+}
+
+.footer-logo {
+  max-width: 150px;
+  margin-bottom: 10px;
+}
+
+.instagram-link img {
+  max-width: 50px;
+  transition: transform 0.3s ease;
+}
+
+.instagram-link img:hover {
+  transform: scale(1.1);
+}
+
+.right-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: left;
+  background-color: #FF7F50;
+  width: 28%; /* Ajustez la largeur selon vos besoins */
+  gap: 20px;
+  color:white;
+  margin-right: 300px;
+}
+
+.contact-section {
+  flex: 1;
+  padding: 0 10px; /* Reduced padding to bring sections closer */
+  background-color: #FF7F50;
+  font-weight: 100;
+}
+
+.contact-section h1 {
+  margin-bottom: 10px;
+  font-family: "Lilita One", sans-serif;
+  font-weight: 100;
+}
+
+.contact-section ul {
+  list-style: none;
+  padding: 0;
+  font-weight: 100;
+}
+
+.contact-section ul li {
+  margin-bottom: 5px;
+  font-weight: 100;
+}
+
+.mentionlegale {
+  color: white;
+  text-decoration: none;
+  font-weight: 100;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px;
+  background-color: #FF7F50;
+  font-weight: 100;
+}
+
+.footer-bottom p,
+.footer-bottom a {
+  margin: 0;
+  font-size: 16px;
+  color: white;
+}
+
+
+
+
+/* page contact */
+
+
+/* Style spécifique pour la nouvelle page */
+.blue-nav {
+  background-color: #219ED5; /* Couleur bleue pour la barre de navigation */
+}
+
+.blue-nav .menu li a {
+  color: white; /* Couleur des liens */
+}
+
+.blue-nav .menu li a:hover {
+  color: #ddd; /* Couleur des liens au survol */
+}
+
+.blue-nav .rounded-link {
+  background-color:#FF7F50; /* Couleur de fond du lien arrondi */
+  color: #219ED5; /* Couleur du texte */
+}
+
+.blue-nav .rounded-link:hover {
+  background-color: #ddd; /* Couleur de fond au survol */
+}
+
+
+
+.contact-form-background.new-background {
+  background-image: url('partage\ \(33\).png'); /* Chemin vers la nouvelle image de fond */
+  padding: 50px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: flex-end; /* Aligne le formulaire à droite */
+}
+
+.contact-form-section {
+  display: flex;
+  justify-content: flex-end; /* Aligne le formulaire à droite */
+  max-width: 600px;
+  padding: 20px;
+  border: 2px solid #219ED5;
+  border-radius: 15px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-left: auto; /* Aligne à droite */
+  margin-right: 50px; /* Espacement à droite */
+}
+
+.styled-form {
+  width: 100%;
+}
+
+.styled-form input[type="text"],
+.styled-form input[type="email"],
+.styled-form input[type="tel"],
+.styled-form input[type="datetime-local"],
+.styled-form textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.styled-form input[type="submit"] {
+  background-color: #FF7F50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.styled-form input[type="submit"]:hover {
+  background-color: #219ED5;
+}
+
+.contact-info-section {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-top: 2px solid #219ED5;
+  margin-top: 20px;
+}
+/* Styles spécifiques pour la nouvelle page */
+
+.contact-form-background.new-background {
+  background-image: url('partage (33).png'); /* Chemin vers la nouvelle image de fond */
+  padding: 50px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center; /* Centrer le contenu horizontalement */
+  align-items: center; /* Centrer le contenu verticalement */
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Centrer verticalement */
+  width: 100%;
+  margin-top: -50px;
+}
+
+.content-wrapper .left-text {
+  flex: 1;
+  color: white !important; /* Texte en blanc */
+  margin-right: 20px; /* Espacement à droite du texte */
+  font-size: 36px !important; /* Augmenter la taille de la police */
+  text-align: center; /* Centrer le texte horizontalement */
+}
+
+.content-wrapper .left-text p {
+  font-size: 60px !important; /* Augmenter la taille de la police */
+  text-align: left;
+}
+
+.contact-form-section {
+  flex: 1;
+  max-width: 600px;
+  padding: 20px;
+  border: none; /* Supprimer la bordure */
+  border-radius: 15px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-left: auto; /* Aligner à droite */
+}
+
+
+.help-text-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  margin-bottom: 100px;
+}
+
+.help-text-container.active,
+.help-text-container.initial-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.help-text {
+  text-align: center;
+  font-family: "Lilita One", sans-serif;
+  max-width: 70%; /* Ajustez selon vos besoins */
+}
+
+.help-text h2 {
+  font-size: 60px;
+  color: #219ED5;
+  text-align: left;
+}
+
+.help-text p {
+  font-size: 18px;
+  color: #333;
+  text-align: left; /* Alignement à gauche pour le texte */
+  margin-top: 10px;
+}
+
+.contact-button {
+  margin-left: 20px;
+  padding-top: 160px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #FF7F50; /* Couleur du bouton */
+  color: white; /* Couleur du texte */
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 100px;
+  transition: background-color 0.3s;
+  font-family: "Lilita One", sans-serif;
+}
+
+.btn:hover {
+  background-color: #219ED5;
+}
+
+
+.service-intro {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.service-intro h2 {
+  font-size: 50px;
+  color: #219ED5;
+  font-family: "Lilita One", sans-serif;
+}
+
+.instagram-follow h2 {
+  text-align: center;
+  background: linear-gradient(90deg, #E1306C 30%, #FD1D1D 50%, #F77737 70%, #FCAF45 85%, #FFDC80);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 40px 0;
+  font-size: 50px;
+  font-family: "Lilita One", sans-serif;
+}
+
+
+
+
+.instagram-images {
+  display: flex;
+  justify-content: center;
+  gap: 50px; /* Espacement entre les images */
+  margin-bottom: 40px;
+}
+
+.instagram-image {
+  text-align: center;
+}
+
+.instagram-image img {
+  width: 300px; /* Ajustez la taille selon vos besoins */
+  height: auto;
+  transition: transform 0.3s ease;
+  border-radius: 15px;
+}
+
+.instagram-image img:hover {
+  transform: scale(1.05);
+}
+
+.image-details h3 {
+  font-size: 24px;
+  color: #219ED5;
+  margin-top: 10px;
+  font-family: "Lilita One", sans-serif;
+}
+
+.image-details p {
+  font-size: 18px;
+  color: #333;
+  margin-top: 5px;
+  font-family: "Lilita One", sans-serif;
+}
+
+
+
+/* Page 3*/
+
+/* Styles pour les textes ajoutés */
+/* Page 3*/
+
+/* Styles pour les textes ajoutés */
+
+
+.about-us-section-page3 {
+  text-align: center;
+  margin: 40px 0;
+  padding: 20px;
+}
+
+.about-us-title-page3 {
+  font-size: 90px;
+  color: #219ED5;
+  font-family: "Lilita One", sans-serif;
+}
+
+.about-us-text-page3 {
+  font-size: 27px;
+  color: #333;
+  margin-top: 10px;
+  font-family: "DM Sans", sans-serif;
+  text-align: left; /* Centre le texte */
+  max-width: 800px; /* Largeur maximale pour le texte */
+  margin: 0 auto; /* Centre le conteneur */
+}
+
+.about-us-text-page3::first-line {
+  text-align: left; /* Aligne la première ligne à gauche */
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.values-section {
+  text-align: center;
+  margin: 60px 0;
+  padding: 20px;
+}
+
+.values-title {
+  font-size: 60px;
+  color: #219ED5;
+  font-family: "Lilita One", sans-serif;
+  margin-bottom: 40px;
+}
+
+.values-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px; /* Espacement entre les items */
+}
+
+.value-item {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  transition: transform 0.3s ease;
+}
+
+.value-item:hover {
+  transform: translateY(-10px);
+}
+
+.value-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.value-item h3 {
+  font-size: 24px;
+  color: #FF7F50;
+  font-family: "Lilita One", sans-serif;
+  margin-bottom: 10px;
+}
+
+.value-item p {
+  font-size: 18px;
+  color: #333;
+  font-family: "DM Sans", sans-serif;
+}
+
+
+
+.mission-section {
+  background-color: #219ED5; /* Fond bleu */
+  color: white; /* Couleur du texte */
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 40px;
+}
+
+.mission-title {
+  font-size: 60px;
+  font-family: "Lilita One", sans-serif;
+  margin-bottom: 20px;
+}
+
+.mission-text {
+  font-size: 24px;
+  font-family: "DM Sans", sans-serif;
+  margin-bottom: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.mission-images {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* Augmentez l'espacement entre les images */
+  padding-top: 60px;
+}
+
+.mission-image {
+  width: 300px; /* Augmentez la taille des images */
+  height: auto;
+  transform: rotate(-5deg);
+  transition: transform 0.3s ease;
+}
+
+.mission-image:nth-child(2) {
+  transform: rotate(5deg);
+}
+
+.mission-image:hover {
+  transform: scale(1.05);
+}
+
+
+.approach-section {
+  padding: 40px 20px;
+  margin-top: 80px;
+}
+
+.approach-title {
+  font-size: 50px;
+  font-family: "Lilita One", sans-serif;
+  color: #219ED5;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-left: 170px;
+}
+
+.approach-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.approach-text {
+  font-size: 24px;
+  font-family: "DM Sans", sans-serif;
+  margin-bottom: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.approach-image {
+  width: 35%;
+  height: auto;
+  margin-left: 20px; /* Adjust the margin according to your layout */
+  border-radius: 10px; /* Optional: add some border radius */
+  margin-right: 50px;
+}
+
+
+.idea-section {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.idea-title {
+  font-size: 50px;
+  font-family: "Pacifico", sans-serif;
+  color: #FF7F50; /* Vous pouvez ajuster la couleur selon vos besoins */
+  margin-bottom: 20px;
+}

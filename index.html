@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agence de Communication The Amarot </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Rubik+Mono+One&display=swap" rel="stylesheet"> 
+</head>
+<body>
+  <style>
+    .contact-link {
+        color: white !important;
+    }
+
+    .contact-link:hover {
+        color: gray !important; /* Couleur de survol optionnelle */
+    }
+
+    /* Vos autres styles CSS */
+</style>
+    <header class="sticky">
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="AMAROT_fin-removebg-preview.png" alt="Logo de The Amarot">
+                </a>
+            </div>
+            <ul class="menu">
+                <li><strong><a href="index.html">Accueil</a></strong></li>
+                <li><strong><a href="Service-Amarot.html">Services</a></strong></li>
+                <li><strong><a href="A-propos-Amarot.html">À propos</a></strong></li>
+                <li><strong><a href="Contact-Amarot.html" class="rounded-link contact-link">Contacter</a></strong></li>
+
+            </ul>
+        </nav>
+    </header>
+
+
+    <section id="accueil" class="section with-background">
+      <div class="container accueil-container">
+          <div class="accueil-text">
+              <h1><span class="text-orange">The</span><br><span class="text-blue">Ama</span><span class="text-orange">rot</span></h1>
+          </div>
+          <div class="accueil-image">
+              <div class="image-text">Découvrez nous sur nos réseaux sociaux !</div>
+              <a href="https://www.instagram.com/the_amarot/">
+                  <img src="pexels-fauxels-3184325.jpg" alt="Image cliquable">
+              </a>
+          </div>
+      </div>
+  </section>
+  
+  
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Obtenez l'URL actuelle
+            var currentUrl = window.location.href;
+    
+            // Sélectionnez tous les liens de navigation
+            var navLinks = document.querySelectorAll('.menu li a');
+    
+            // Parcourez chaque lien
+            navLinks.forEach(function(link) {
+                // Vérifiez si l'URL du lien correspond à l'URL actuelle
+                if (currentUrl.includes(link.href)) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+<main>
+    <div id="cookie-banner" style="display: none;">
+        <p>Nous utilisons des cookies pour vous garantir la meilleure expérience sur notre site web. <a href="privacy-policy.html">En savoir plus</a></p>
+        <button onclick="acceptCookies()">J'accepte</button>
+    </div>
+    <script>
+        function checkCookieConsent() {
+            return document.cookie.split(';').some((item) => item.trim().startsWith('cookie_consent='));
+        }
+    
+        function showCookieBanner() {
+            const banner = document.getElementById('cookie-banner');
+            if (!checkCookieConsent()) {
+                banner.style.display = 'block';
+            }
+        }
+    
+        function acceptCookies() {
+            document.cookie = "cookie_consent=accepted; max-age=" + 60 * 60 * 24 * 365 + "; path=/"; // 1 an
+            const banner = document.getElementById('cookie-banner');
+            banner.style.display = 'none';
+        }
+    
+        document.addEventListener('DOMContentLoaded', showCookieBanner);
+    </script>
+    
+    
+
+    <style>
+        .marquee {
+          width: 100%;
+          line-height: 120px; /* Augmenter pour éviter que le texte soit coupé */
+          background-color: white;
+          font-size: 100px; /* Taille de police conservée */
+          white-space: nowrap;
+          overflow: hidden; /* Ajuster au besoin */
+          box-sizing: border-box;
+          font-weight: 100;
+        }
+        .marquee p {
+          display: inline-block;
+          padding-left: 0%;
+          margin-top: 0; /* Réduire l'espace au-dessus du texte */
+          margin-bottom: 0; /* Réduire l'espace en dessous du texte */
+          animation: marquee 500s linear infinite;
+        }
+        .marquee1 p {
+          color: #FF5733;
+          font-family: "Lilita One", sans-serif;
+          font-size: 100px;
+        }
+        .marquee2 p {
+          animation-direction: reverse;
+          color: #33C4FF;
+          font-family: "Lilita One", sans-serif;
+          font-size: 100px;
+        }
+        @keyframes marquee {
+          0%   { transform: translate( 0, 0); }
+          100% { transform: translate(-50%, 0); }
+        }
+      </style>
+      
+      <body>
+        <div class="marquee marquee1">
+          <p><strong>REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • </strong></p>
+        </div>
+        <div class="marquee marquee2">
+          <p><strong>REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • </strong></p>
+        </div>
+      </body>
+      
+      
+    <div class="two-column-layout">
+        <div class="left-column lilita">
+            <h1 class="central-text"><strong><span class="text-orange">Illuminez</span> <span class="text-blue">l'avenir</span> <span class="text-orange">avec votre<br></span> <span class="text-blue">créativité</span> <span class="text-orange">transformer votre  vision<br> en</span> <span class="text-blue">réalité</span> </strong></h1>
+        </div>
+        <div class="right-column">
+            <h1><strong><span class="text-orange">Services</span><span class="text-blue"> innovants</span> <span class="text-orange">conçus pour<br> propulser votre </span><span class="text-blue">activité</span><span class="text-orange"> vers<br> de nouveaux sommets</span></strong></h1>
+            <a href="Service-Amarot.html" class="btn">En savoir plus</a>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <img src="interent 1.jpg" alt="Amarot"/>
+        <img src="internet 3.jpg" alt="Amarot"/>
+    </div>
+
+
+        
+        <div class="images-container">
+            <img src="sticker off 1.png" alt="Amarot"/> 
+            <img src="sticker off 3.png" alt="Amarot"/> 
+            <img src="sticker off 2.png" alt="Amarot"/>
+        </div>
+
+        
+        <script>
+            function reveal() {
+              var elements = document.querySelectorAll('.reveal-element');
+          
+              for (var i = 0; i < elements.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = elements[i].getBoundingClientRect().top;
+                var elementVisible = 100; // Ajustez ce nombre au besoin
+          
+                if (elementTop < windowHeight - elementVisible) {
+                  elements[i].classList.add("reveal");
+                } else {
+                  elements[i].classList.remove("reveal");
+                }
+              }
+            }
+          
+            window.addEventListener("scroll", reveal);
+          </script>
+          
+        
+          
+
+          <div class="parent-container">      
+            <div class="center-text reveal-element active">
+                <h1> Les clés de la réussite digital</h1>
+                <p> accroître la visibilité, engager efficacement et booster la croissance.</p>
+            </div>
+        
+            <div class="custom-image-container reveal-element active">
+                <img src="1-removebg-preview.png" alt="Amarot"/>
+                <img src="2-removebg-preview.png" alt="Amarot"/>
+                <img src="3-removebg-preview.png" alt="Amarot"/>
+            </div>
+        
+            <div class="custom-text-container text-container-spacing reveal-element active">
+                <p class="titredemalade">Insight<br><span class="left-aligned-text">Compréhension approfondie du public <br>et analyses détaillées, transformation<br> de données en stratégies efficaces.</span></p>
+                <p class="titredemalade">Présence<br><span class="left-aligned-text">Création de sites web esthétiques<br> et intuitifs, optimisation SEO <br>pour une meilleure visibilité.</span></p>
+                <p class="titredemalade">Contenu<br><span class="left-aligned-text">Production de contenus captivants <br>(blogs, vidéos, infographies) pour<br> éduquer et inspirer.</span></p>
+            </div>
+        
+        
+            <div class="custom-image-container reveal-element active">
+                <img src="4-removebg-preview.png" alt="Amarot"/>
+                <img src="5-removebg-preview (1).png" alt="Amarot"/>
+                <img src="6-removebg-preview.png" alt="Amarot"/>
+            </div>
+        
+            <div class="custom-text-container reveal-element active">
+                <p class="titredemalade">Publicités<br><span class="left-aligned-text">Campagnes publicitaires personnalisées<br> pour un ciblage précis et un retour sur<br> investissement optimisé.</span></p>
+                <p class="titredemalade">Support<br><span class="left-aligned-text">Support client réactif et efficace<br> de technologies avancées pour une<br> expérience utilisateur améliorée.</span></p>
+                <p class="titredemalade">Perception<br><span class="left-aligned-text">Analyse et amélioration constantes <br>des campagnes pour une performance<br> accrue et un succès durable.</span></p>
+            </div>
+        </div>
+        
+        <div class="two-column-layout reveal-element active">
+            <div class="left-column special-text">
+                <h1><strong><span class="text-orange">Pour vous </span><span class="text-blue">fournir</span><span class="text-orange"><br> les </span><span class="text-blue">meilleurs services</span></strong></h1>
+            </div>
+            <div class="right-column special-text2">
+                <h1><strong><span class="text-orange">L'équipe de </span><span class="text-blue">Amarot</span><span class="text-orange"> se mobilise<br> pour</span><span class="text-blue"> vous offrir </span><span class="text-orange">les</span> <span class="text-blue">meilleurs services</span></strong></h1>
+                <a href="Service-Amarot.html" class="btn">En savoir plus</a>
+            </div>
+        </div>
+        
+
+    
+
+    <div class="clickable-images-section">
+      <div class="clickable-image">
+          <a href="photographie.html">
+              <img src="photographe1.jpg" alt="Amarot photographie">
+          </a>
+          <div class="image-texts">
+              <p class="title">Photographies</p>
+              <p class="subtitle">Nous gérons la mise à jour quotidienne de vos images uniques, à l'image de votre nom.</p>
+          </div>
+      </div>
+      <div class="clickable-image">
+          <a href="Social-Media-Amarot.html">
+              <img src="social media.jpg" alt="Amarot social media">
+          </a>
+          <div class="image-texts">
+              <p class="title">Social Media</p>
+              <p class="subtitle">Nous gérons l'intégralité de vos réseaux sociaux, ainsi que la garantie d'une bonne gestion. </p>
+          </div>
+      </div>
+      <div class="clickable-image">
+          <a href="strategie-marque.html">
+              <img src="stratégie de marque.jpg" alt="Amarot strategie de marque">
+          </a>
+          <div class="image-texts">
+              <p class="title">Stratégie Marketing</p>
+              <p class="subtitle">Grâce à notre savoir faire, nous contribuons a l'expension de votre marque.</p>
+          </div>
+      </div>
+  </div>
+
+    <div class="marquee marquee1">
+        <p><strong>REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • </strong></p>
+      </div>
+      <div class="marquee marquee2">
+        <p><strong>REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • </strong></p>
+      </div>
+      
+      <div class="about-us-container">
+        <h1>À propos de nous</h1>
+        <h3>Un voyage au cœur de notre passion, de nos valeurs, et de notre mission. <br>Plongez dans notre histoire, rencontrez notre équipe dédiée, et découvrez ce qui nous rend uniques.</h3>
+        <a href="A-propos-Amarot.html" class="btn btn-small">À propos de nous</a>
+    </div>
+
+    <div class="tarifs-container">
+      <h1>Nos tarifs mensuels, choisissez l'abonnement<br> qui vous convient le mieux.</h1>
+      <div class="packs-container">
+        <div class="pack">
+          <div class="pack-title-container">
+            <h2>Pack Gold</h2>
+          </div>
+          <h3><span class="price-color">499,99€</span><span class="per-month-color"> par mois</span></h3>
+          <div class="pack-link-container">
+            <div class="pack-link-container">
+              <a href="https://buy.stripe.com/test_dR68xobXug9f1aw5km" target="_blank" class="big-link">Commander</a>
+            </div>
+          </div>
+          <div class="pack-content">
+            <p>Gestion de la Carte</p>
+            <p>Réponses aux avis</p>
+            <p>1 shooting photo de démarrage</p>
+            <p>3 Story de démarrage</p>
+            <p>1 jeu concours par semestre</p>
+          </div>
+        </div>
+        <div class="pack">
+          <div class="pack-title-container">
+            <h2>Pack Diamant</h2>
+          </div>
+          <h3><span class="price-color">799,99€</span><span class="per-month-color"> par mois</span></h3>
+          <div class="pack-link-container">
+            <div class="pack-link-container">
+              <a href="https://buy.stripe.com/test_6oE3d4bXucX306s288" target="_blank" class="big-link">Commander</a>
+            </div>
+          </div>
+          <div class="pack-content">
+            <p>Gestion de la Carte</p>
+            <p>Réponses aux avis</p>
+            <p>1 shooting par semestre</p>
+            <p>12 story par mois</p>
+            <p>8 Publications par mois</p>
+            <p>1 jeu concours par trimestre</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="div-centered">
+             <h1><span class="text-blue">Explorons</span> <span class="text-orange">ensemble</span><span class="text-blue">, les voies<br> de la </span><span class="text-orange">collaboration.</span></h1>
+          </div>
+          
+      
+          <div class="container">
+            <input type="button" class="button" value="Cliquez ici" />
+            <div class="paragraphs">
+                <div class="paragraph">
+                    <h3 style="color: #FF7F50; text-align: center;" class="text first-text" class="titre">Vous comprendre et nous adapter à vos attentes.</h3>
+                    <p style="color: #219ED5; font-size: 25px; text-align: center;" class="texteSoustitre">Nous prenons le temps de comprendre vos besoins uniques et adaptons nos solutions pour qu'elles correspondent parfaitement à vos attentes. Faites confiance à une équipe qui place vos priorités au centre de ses actions.</p>
+                </div>
+                <div class="paragraph">
+                    <h3 style="color: #FF7F50; text-align: center;" class="titre">Choisissez le meilleur abonnement</h3>
+                    <p style="color: #219ED5; font-size: 25px; text-align: center;" class="texteSoustitre">Découvrez nos abonnements flexibles conçus pour répondre à toutes vos exigences, qu'elles soient petites ou grandes. Bénéficiez de services premium tout en maîtrisant votre budget.</p>
+                </div>
+                <div class="paragraph">
+                    <h3 style="color: #FF7F50; text-align: center;" class="titre">Vous assister durant votre parcours</h3>
+                    <p style="color: #219ED5; font-size: 25px; text-align: center;" class="texteSoustitre">Nous vous accompagnons à chaque étape de votre parcours numérique, offrant un support réactif et des conseils experts pour maximiser votre impact. Laissez-nous vous guider vers le succès.</p>
+                </div>
+            </div>
+        </div>
+        
+        <style>
+            .container {
+                text-align: center;
+            }
+        
+            .button {
+                display: inline-block;
+                padding: 20px 40px;
+                font-size: 24px;
+                border-radius: 50px;
+                cursor: pointer;
+                width: 250px;
+                background-color: #FF7F50;
+                border: none;
+                transition: background-color 0.3s ease;
+            }
+        
+            .button:hover {
+                background-color: #219ED5;
+            }
+        
+            .paragraphs {
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 1s ease-out, opacity 1s ease-out;
+                opacity: 0;
+                background-image: url(partage\ \(7\).png); /* Remplacez par le chemin de votre image */
+                background-size: contain; /* Ajuste l'image pour qu'elle soit complètement visible */
+                background-repeat: no-repeat; /* Empêche la répétition de l'image */
+                background-position: center; /* Centre l'image */
+                padding: 20px; /* Ajouter un padding pour le contenu */
+            }
+        
+            .paragraphs.visible {
+                max-height: 1000px; /* Ajustez selon vos besoins */
+                opacity: 1;
+            }
+        
+            .paragraph {
+                padding: 10px;
+                
+                border-radius: 30px; /* Ajouter des coins arrondis */
+            }
+        </style>
+        
+        
+        
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+      const button = document.querySelector('.button');
+      const paragraphs = document.querySelector('.paragraphs');
+      let isVisible = false;
+
+      button.addEventListener('click', () => {
+          if (!isVisible) {
+              paragraphs.classList.add('visible');
+              button.value = 'Cacher';
+              isVisible = true;
+          } else {
+              paragraphs.classList.remove('visible');
+              button.value = 'Afficher';
+              isVisible = false;
+          }
+      });
+  });
+</script>
+
+<div class="contact-header">
+  <h1>N'hésitez pas à nous contacter via mail ou rendez-vous téléphonique !</h1>
+</div>
+<div class="contact-form-background">
+  <div class="contact-form-section">
+      <form action="submit.php" method="post" class="styled-form">
+          <label for="name">Nom:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="phone">Téléphone:</label>
+          <input type="tel" id="phone" name="phone" required>
+          <label for="subject">Sujet:</label>
+          <input type="text" id="subject" name="subject">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message"></textarea>
+          <label for="appointment_date">Date de rendez-vous:</label>
+          <input type="datetime-local" id="appointment_date" name="appointment_date">
+          <input type="submit" value="Envoyer">
+      </form>
+  </div>
+</div>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      const form = document.querySelector('form');
+      form.addEventListener('submit', function(event) {
+          // Valider les champs si nécessaire
+          // Exemple : if (!form.name.value) { alert('Name is required'); event.preventDefault(); }
+      });
+  });
+</script>
+
+
+
+
+
+
+<style>
+    .faq-title {
+        font-size: 45px;
+        font-weight: 100;
+        color: #219ED5;
+        margin-bottom: 20px;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    .faq-container {
+        width: 40%;
+        margin: 0 auto; /* Center the container horizontally */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 100px;
+    }
+
+    .faq-item {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .faq-question {
+        background-color: white;
+        color: #219ED5;
+        padding: 20px;
+        cursor: pointer;
+        font-weight: 100;
+        font-size: 23px;
+        border-bottom: 1px solid #ddd; /* Trait séparateur en dessous */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center; /* Center the text */
+    }
+
+    .faq-question .toggle {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        position: relative;
+    }
+
+    .faq-question .toggle:before,
+    .faq-question .toggle:after {
+        content: '';
+        position: absolute;
+        background-color: #219ED5;
+        transition: transform 0.3s ease;
+    }
+
+    .faq-question .toggle:before {
+        width: 100%;
+        height: 2px;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+
+    .faq-question .toggle:after {
+        width: 2px;
+        height: 100%;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .faq-answer {
+        display: none;
+        padding: 20px;
+        background-color: white;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.5s ease, max-height 0.5s ease;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .faq-answer.show {
+        display: block;
+        opacity: 1;
+        max-height: 200px; /* Ajustez selon la hauteur maximale nécessaire */
+    }
+
+    .faq-question.active .toggle:after {
+        transform: translateX(-50%) rotate(90deg);
+    }
+</style>
+</head>
+<body>
+
+<div class="faq-title">Les questions <span class="text-orange">récurrentes</span> que vous vous posez</div>
+
+<div class="faq-container">
+<div class="faq-item">
+    <div class="faq-question">
+        Où est-ce que je peux retrouver mes factures ?
+        <span class="toggle"></span>
+    </div>
+    <div class="faq-answer">Pour retrouver vos factures il vous suffit de nous écrire pour la recevoir</div>
+</div>
+<div class="faq-item">
+    <div class="faq-question">
+        Quels sont vos horaires de support ?
+        <span class="toggle"></span>
+    </div>
+    <div class="faq-answer">Votre agence de communication préférée Amarot est en ligne 24h/24h et 7j/7j afin de répondre à ses membres le plus rapidement possible.</div>
+</div>
+<div class="faq-item">
+    <div class="faq-question">
+        Quelle est votre politique de retour ?
+        <span class="toggle"></span>
+    </div>
+    <div class="faq-answer">Après la fin de votre engagement, Amarot vous garantit un arrêt de votre abonnement.</div>
+</div>
+<div class="faq-item">
+    <div class="faq-question">
+        Comment puis-je vous proposer un projet ou une collaboration ?
+        <span class="toggle"></span>
+    </div>
+    <div class="faq-answer">Pour tous projets ou collaboration, Amarot s'adapte à vos envies et s'assure d'une facilité de compréhension relationnelle</div>
+</div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+const questions = document.querySelectorAll('.faq-question');
+
+questions.forEach(question => {
+    question.addEventListener('click', function() {
+        const answer = this.nextElementSibling;
+        const isActive = this.classList.contains('active');
+
+        if (isActive) {
+            answer.classList.remove('show');
+            this.classList.remove('active');
+        } else {
+            // Ferme toutes les autres réponses
+            document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('show'));
+            document.querySelectorAll('.faq-question').forEach(q => q.classList.remove('active'));
+
+            // Ouvre la réponse actuelle
+            answer.classList.add('show');
+            this.classList.add('active');
+        }
+    });
+});
+});
+</script>
+        
+
+
+    
+
+    
+    
+    
+
+    
+    
+  
+  
+  
+  
+    
+                    
+</main>
+<footer>
+  <div class="footer-container">
+      <div class="left-section">
+          <img src="AMAROT_fin_Blanc-removebg-preview.png" alt="Logo de l'entreprise NewTech Entreprise" class="footer-logo">
+          <a href="https://www.instagram.com/the_amarot/" target="_blank" class="instagram-link">
+              <img src="instagram_logo.webp" alt="Instagram">
+          </a>
+      </div>
+      <div class="right-section">
+          <div class="contact-section">
+              <h1>Service</h1>
+              <ul>
+                  <li><a href="photographie.html" class="mentionlegale">Photographie</a></li>
+                  <li><a href="Social-Media-Amarot.html" class="mentionlegale">Social Media</a></li>
+                  <li><a href="stratégie de marque.jpg" class="mentionlegale">Stratégie</a></li>
+                  
+              </ul>
+          </div>
+          <div class="contact-section">
+              <h1>Informations</h1>
+              <ul>
+                  <li><a href="A-propos-Amarot.html" class="mentionlegale">À Propos de Nous</a></li>
+                  <li><a href="Contact-Amarot.html" class="mentionlegale">Nous Contacter</a></li>
+                  <li><a href="Mentions Légales.html" class="mentionlegale">Mentions Légales</a></li>
+                  <li><a href="Conditions Générale d'utilisation.html" class="mentionlegale">Conditions Générale d'Utilisation</a></li>
+                  <li><a href="Politique de Confidentialité.html" class="mentionlegale">Politique de Confidentialité</a></li>
+                  
+              </ul>
+          </div>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <p>© 2024 NewTech Entreprise. Tous droits réservés.</p>
+      
+  </div>
+</footer>
+
+
+
+</html>

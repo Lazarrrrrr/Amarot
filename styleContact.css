@@ -1,0 +1,183 @@
+/* Importation des polices utilisées */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+/* Styles généraux */
+body {
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Styles pour la barre de navigation */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.blue-nav {
+    background-color: #219ED5; /* Couleur bleue pour la barre de navigation */
+}
+
+.blue-nav .menu li a {
+    color: white; /* Couleur des liens */
+}
+
+.blue-nav .menu li a:hover {
+    color: #ddd; /* Couleur des liens au survol */
+}
+
+.blue-nav .rounded-link {
+    background-color: #FF7F50; /* Couleur de fond du lien arrondi */
+    color: #219ED5; /* Couleur du texte */
+}
+
+.blue-nav .rounded-link:hover {
+    background-color: #ddd; /* Couleur de fond au survol */
+}
+
+.logo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    max-width: 40%;
+    max-height: 40px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    flex: 1;
+    justify-content: center;
+    margin-left: auto;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu li a {
+    color: #219ED5;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 50;
+}
+
+.menu li a:hover {
+    color: gray;
+}
+
+/* Section avec fond spécifique */
+.section.with-background {
+    background-image: url('partage (30).png'); /* Ajustez le chemin de l'image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+/* Styles spécifiques pour la nouvelle page */
+.contact-container-new {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+}
+
+.contact-text-new {
+    flex: 1;
+    padding-right: 20px;
+    color: #219ED5;
+}
+
+.contact-form-background-new {
+    background-image: url('nouvelle-image.png'); /* Chemin vers la nouvelle image de fond */
+    padding: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: flex-end; /* Aligne le formulaire à droite */
+    flex: 1;
+}
+
+.contact-form-section-new {
+    display: flex;
+    justify-content: flex-end; /* Aligne le formulaire à droite */
+    max-width: 600px;
+    padding: 20px;
+    border: 2px solid #219ED5;
+    border-radius: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-left: auto; /* Aligne à droite */
+}
+
+.styled-form-new {
+    width: 100%;
+}
+
+.styled-form-new input[type="text"],
+.styled-form-new input[type="email"],
+.styled-form-new input[type="tel"],
+.styled-form-new input[type="datetime-local"],
+.styled-form-new textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.styled-form-new input[type="submit"] {
+    background-color: #FF7F50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.styled-form-new input[type="submit"]:hover {
+    background-color: #219ED5;
+}
+
+.contact-info-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-top: 2px solid #219ED5;
+    margin-top: 20px;
+}
+
+/* Footer styles */
+footer {
+    background: #219ED5;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}

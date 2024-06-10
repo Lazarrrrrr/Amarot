@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service - Agence Communication Amarot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nouvelle-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="sticky blue-nav">
+    <nav>
+        <div class="logo">
+            <a href="index.html">
+                <img src="AMAROT_fin_Blanc-removebg-preview.png" alt="Logo de The Amarot">
+            </a>
+        </div>
+        <ul class="menu">
+            <li><strong><a href="index.html">Accueil</a></strong></li>
+            <li><strong><a href="Service-Amarot.html">Services</a></strong></li>
+            <li><strong><a href="A-propos-Amarot.html">À propos</a></strong></li>
+            <li><strong><a href="Contact-Amarot.html" class="rounded-link contact-link">Contacter</a></strong></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div id="cookie-banner" style="display: none;">
+        <p>Nous utilisons des cookies pour vous garantir la meilleure expérience sur notre site web. <a href="privacy-policy.html">En savoir plus</a></p>
+        <button onclick="acceptCookies()">J'accepte</button>
+    </div>
+    <script>
+        function checkCookieConsent() {
+            return document.cookie.split(';').some((item) => item.trim().startsWith('cookie_consent='));
+        }
+    
+        function showCookieBanner() {
+            const banner = document.getElementById('cookie-banner');
+            if (!checkCookieConsent()) {
+                banner.style.display = 'block';
+            }
+        }
+    
+        function acceptCookies() {
+            document.cookie = "cookie_consent=accepted; max-age=" + 60 * 60 * 24 * 365 + "; path=/"; // 1 an
+            const banner = document.getElementById('cookie-banner');
+            banner.style.display = 'none';
+        }
+    
+        document.addEventListener('DOMContentLoaded', showCookieBanner);
+    </script>
+
+    <div class="blue-container">
+        <div class="text-container">
+            <h1>On vous propose le meilleur <br> de nos services</h1>
+            <p>Découvrez comment nous pouvons vous aider<br> à atteindre vos objectifs commerciaux avec<br> nos services personnalisés.</p>
+            <button onclick="scrollToServices()">
+                <img src="flechebouton4-removebg-preview.png" alt="Scroll down">
+            </button>
+        </div>
+    </div>
+    <style>
+        .blue-container {
+            background-color: #219ED5; /* Couleur bleue */
+            padding: 40px 20px;
+            color: white;
+            text-align: left;
+            position: relative;
+            height: 50vh;
+        }
+    
+        .text-container {
+            max-width: cover;
+            margin: 0 auto;
+            position: relative;
+            margin-left: 200px;
+            
+        }
+    
+        .text-container h1 {
+            font-size: 60px;
+            margin-bottom: 50px;
+            font-family: "Lilita One", sans-serif;
+            font-weight: 100;
+        }
+    
+        .text-container p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            font-family: "DM Sans", sans-serif;
+        }
+    
+        .text-container button {
+        position: absolute;
+        bottom: -30%;
+        right: 10%;
+        background-color: #FF7F50;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        text-align: center;
+        font-size: 30px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        }
+    
+        .text-container button:hover {
+            background-color: #E64A19;
+        }
+    
+        .text-container button img {
+            width: 90px;
+            height: 90px;
+        }
+    </style>
+    
+    <script>
+        function scrollToServices() {
+            document.querySelector('.service-intro').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+
+<div class="shooting-section">
+    <h2 class="shooting-title">Nos Shooting</h2>
+    <div class="shooting-content">
+        <div class="text-with-image">
+            <p class="shooting-text">
+                <span class="text-blue">Découvrez nos séances photo professionnelles<br> qui capturent l'essence de votre marque avec<br> précision et créativité.</span>
+            </p>
+            <img src="photographie_fond1.jpg" alt="Shooting Image" class="shooting-image">
+        </div>
+        <div class="center-button">
+            <a href="photographie.html" class="btn-shooting">Voir Plus</a>
+        </div>
+    </div>
+</div>
+
+<style>
+    .shooting-section {
+        text-align: center;
+        padding: 40px 20px;
+        margin-bottom: 40px;
+    }
+
+    .shooting-title {
+        font-size: 60px;
+        margin-bottom: 20px;
+        font-family: "Lilita One", sans-serif;
+        color: #219ED5;
+    }
+
+    .shooting-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-with-image {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .shooting-text {
+        font-size: 27px;
+        font-family: "DM Sans", sans-serif;
+        text-align: left;
+        padding-right: 300px;
+        margin-left:225px
+    }
+
+    .shooting-image {
+        width: 20%; /* Réduire la taille de l'image */
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .center-button {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .btn-shooting {
+        background-color: #FF5733;
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-size: 18px;
+        font-family: "DM Sans", sans-serif;
+        transition: background-color 0.3s;
+    }
+
+    .btn-shooting:hover {
+        background-color: #E64A19;
+    }
+</style>
+
+<div class="socialmedia-section">
+    <h2 class="socialmedia-title">Social Media</h2>
+    <div class="socialmedia-content">
+        <div class="text-with-image1">
+            <p class="socialmedia-text">
+                <span class="text-blue">Nous gérons l'intégralité de vos réseaux sociaux,<br> ainsi que la garantie d'une bonne gestion.</span>
+            </p>
+            <img src="socialemedia004.jpg" alt="Shooting Image" class="shooting-image">
+        </div>
+        <div class="center-button">
+            <a href="Social-Media-Amarot.html" class="btn-shooting">Voir Plus</a>
+        </div>
+    </div>
+</div>
+
+<style>
+    .socialmedia-section {
+        text-align: center;
+        padding: 40px 20px;
+        margin-bottom: 40px;
+    }
+    .socialmedia-title {
+        font-size: 60px;
+        margin-bottom: 20px;
+        font-family: "Lilita One", sans-serif;
+        color: #219ED5;
+    }
+
+    .socialmedia-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-with-image1 {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .socialmedia-text {
+        font-size: 27px;
+        font-family: "DM Sans", sans-serif;
+        text-align: left;
+        padding-right: 300px;
+        margin-left:225px
+    }
+
+    .socialmedia-image {
+        width: 20%; /* Réduire la taille de l'image */
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .center-button {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .btn-shooting {
+        background-color: #FF5733;
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-size: 18px;
+        font-family: "DM Sans", sans-serif;
+        transition: background-color 0.3s;
+    }
+
+    .btn-shooting:hover {
+        background-color: #E64A19;
+    }
+</style>
+
+<div class="strategie-section">
+    <h2 class="strategie-title">Stratégie de Marques</h2>
+    <div class="strategie-content">
+        <div class="text-with-image2">
+            <p class="strategie-text">
+                <span class="text-blue">Grâce à notre savoir-faire, nous contribuons<br> à l'expansion de votre marque avec des stratégies<br> innovantes et efficaces.</span>
+            </p>
+            <img src="strategie04.jpg" alt="Shooting Image" class="shooting-image">
+        </div>
+        <div class="center-button">
+            <a href="Stratégie.html" class="btn-shooting">Voir Plus</a>
+        </div>
+    </div>
+</div>
+
+<style>
+    .strategie-section {
+        text-align: center;
+        padding: 40px 20px;
+        margin-bottom: 40px;
+    }
+    .strategie-title {
+        font-size: 60px;
+        margin-bottom: 20px;
+        font-family: "Lilita One", sans-serif;
+        color: #219ED5;
+    }
+
+    .strategie-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-with-image2 {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .strategie-text {
+        font-size: 27px;
+        font-family: "DM Sans", sans-serif;
+        text-align: left;
+        padding-right: 300px;
+        margin-left:225px
+    }
+
+    .strategie-image {
+        width: 20%; /* Réduire la taille de l'image */
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .center-button {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .btn-shooting {
+        background-color: #FF5733;
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-size: 18px;
+        font-family: "DM Sans", sans-serif;
+        transition: background-color 0.3s;
+    }
+
+    .btn-shooting:hover {
+        background-color: #E64A19;
+    }
+</style>
+
+    
+    
+
+
+<div class="service-intro">
+    <h2>Découvrez nos <span class="text-orange">services</span> et bien <span class="text-orange">plus encore</span></h2>
+</div>
+
+<div class="clickable-images-section">
+    <div class="clickable-image">
+        <a href="photographie.html">
+            <img src="photographe1.jpg" alt="Amarot photographie">
+        </a>
+        <div class="image-texts">
+            <p class="title">Photographies</p>
+            <p class="subtitle">Nous gérons la mise à jour quotidienne de vos images uniques, à l'image de votre nom.</p>
+        </div>
+    </div>
+    <div class="clickable-image">
+        <a href="Social-Media-Amarot.html">
+            <img src="social media.jpg" alt="Amarot social media">
+        </a>
+        <div class="image-texts">
+            <p class="title">Social Media</p>
+            <p class="subtitle">Nous gérons l'intégralité de vos réseaux sociaux, ainsi que la garantie d'une bonne gestion. </p>
+        </div>
+    </div>
+    <div class="clickable-image">
+        <a href="Stratégie.html">
+            <img src="stratégie de marque.jpg" alt="Amarot strategie de marque">
+        </a>
+        <div class="image-texts">
+            <p class="title">Stratégie Marketing</p>
+            <p class="subtitle">Grâce à notre savoir faire, nous contribuons a l'expension de votre marque.</p>
+        </div>
+    </div>
+</div>
+
+<style>
+    .marquee {
+      width: 100%;
+      line-height: 120px; /* Augmenter pour éviter que le texte soit coupé */
+      background-color: white;
+      font-size: 100px; /* Taille de police conservée */
+      white-space: nowrap;
+      overflow: hidden; /* Ajuster au besoin */
+      box-sizing: border-box;
+      font-weight: 100;
+    }
+    .marquee p {
+      display: inline-block;
+      padding-left: 0%;
+      margin-top: 0; /* Réduire l'espace au-dessus du texte */
+      margin-bottom: 0; /* Réduire l'espace en dessous du texte */
+      animation: marquee 500s linear infinite;
+    }
+    .marquee1 p {
+      color: #FF5733;
+      font-family: "Lilita One", sans-serif;
+      font-size: 100px;
+    }
+    .marquee2 p {
+      animation-direction: reverse;
+      color: #33C4FF;
+      font-family: "Lilita One", sans-serif;
+      font-size: 100px;
+    }
+    @keyframes marquee {
+      0%   { transform: translate( 0, 0); }
+      100% { transform: translate(-50%, 0); }
+    }
+  </style>
+  
+  <body>
+    <div class="marquee marquee1">
+      <p><strong>REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • </strong></p>
+    </div>
+    <div class="marquee marquee2">
+      <p><strong>REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • REJOIGNEZ-NOUS • REJOIGNEZ-NOUS • REJOIGNEZ NOUS • </strong></p>
+    </div>
+  </body>
+
+  <div class="instagram-follow">
+    <h2>Suivez nous sur Instagram</h2>
+</div>
+
+<!-- Section des images cliquables avec titre et texte -->
+<div class="instagram-images">
+    <div class="instagram-image">
+        <a href="https://www.instagram.com/the_amarot/">
+            <img src="Instagram1.jpg" alt="Image 1">
+        </a>
+        <div class="image-details">
+            <h3>Évasion Asiatique</h3>
+            <p>Voyagez à travers les saveurs avec nos plats<br> asiatiques raffinés, photographiés<br> par les experts d'Amarot.</p>
+        </div>
+    </div>
+    <div class="instagram-image">
+        <a href="https://www.instagram.com/the_amarot/">
+            <img src="Instagram11.jpg" alt="Image 2">
+        </a>
+        <div class="image-details">
+            <h3>Cocktails Colorés</h3>
+            <p>Rafraîchissez vos soirées avec quelques<br> cocktails colorés, immortalisés<br> par l'œil expert d'Amarot.</p>
+        </div>
+    </div>
+    <div class="instagram-image">
+        <a href="https://www.instagram.com/the_amarot/">
+            <img src="Instagram111.jpg" alt="Image 3">
+        </a>
+        <div class="image-details">
+            <h3>Délice Italien</h3>
+            <p>Découvrez l'authenticité de l'Italie avec <br>ces pizzas artisanales, capturées<br> à la perfection par Amarot.</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</main>
+
+
+<footer>
+    <div class="footer-container">
+        <div class="left-section">
+            <img src="AMAROT_fin_Blanc-removebg-preview.png" alt="Logo de l'entreprise NewTech Entreprise" class="footer-logo">
+            <a href="https://www.instagram.com/the_amarot/" target="_blank" class="instagram-link">
+                <img src="instagram_logo.webp" alt="Instagram">
+            </a>
+        </div>
+        <div class="right-section">
+            <div class="contact-section">
+                <h1>Service</h1>
+                <ul>
+                    <li><a href="photographie.html" class="mentionlegale">Photographie</a></li>
+                    <li><a href="Social-Media-Amarot.html" class="mentionlegale">Social Media</a></li>
+                    <li><a href="Stratégie.html" class="mentionlegale">Stratégie de marque</a></li>
+                    
+                </ul>
+            </div>
+            <div class="contact-section">
+                <h1>Informations</h1>
+                <ul>
+                    <li><a href="A-propos-Amarot.html" class="mentionlegale">À Propos de Nous</a></li>
+                    <li><a href="Contact-Amarot.html" class="mentionlegale">Nous Contacter</a></li>
+                    <li><a href="Mentions Légales.html" class="mentionlegale">Mentions Légales</a></li>
+                    <li><a href="Conditions Générale d'utilisation.html" class="mentionlegale">Conditions Générale d'Utilisation</a></li>
+                    <li><a href="Politique de Confidentialité.html" class="mentionlegale">Politique de Confidentialité</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2024 NewTech Entreprise. Tous droits réservés.</p>
+        
+    </div>
+  </footer>
+
+</body>
+</html>

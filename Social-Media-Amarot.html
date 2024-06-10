@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agence de Communication The Amarot - Social Media</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet"> 
+</head>
+<body>
+  <style>
+    .contact-link {
+        color: white !important;
+    }
+
+    .contact-link:hover {
+        color: gray !important; /* Couleur de survol optionnelle */
+    }
+
+    .header-section {
+        position: relative;
+        width: 100%;
+        height: 93vh;
+        background-image: url(Social-Media\ fond.png); /* Replace with your image path */
+        background-size: cover;
+        background-position: center;
+    }
+
+    .header-content {
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        color: white;
+        text-align: left;
+        font-family: 'Lilita One', sans-serif;
+        left:300px;
+        top:200px;
+    }
+
+    .header-content h1 {
+        font-size: 100px;
+        font-weight: 100;
+    }
+
+    .header-content h2 {
+        font-size: 23px;
+        margin-top: 10px;
+        font-weight: 100;
+        color:#FF5733;
+    }
+
+    .header-content p {
+        font-size: 30px;
+        margin-top: 20px;
+        font-weight: 100;
+    }
+
+    .scroll-button {
+        position: absolute;
+        bottom: 20%;
+        right: 5%;
+        background-color: #FF7F50;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        text-align: center;
+        font-size: 30px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .scroll-button:hover {
+        background-color: #E64A19;
+    }
+  </style>
+    <header class="sticky">
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="AMAROT_fin-removebg-preview.png" alt="Logo de The Amarot">
+                </a>
+            </div>
+            <ul class="menu">
+                <li><strong><a href="index.html">Accueil</a></strong></li>
+                <li><strong><a href="Service-Amarot.html">Services</a></strong></li>
+                <li><strong><a href="A-propos-Amarot.html">À propos</a></strong></li>
+                <li><strong><a href="Contact-Amarot.html" class="rounded-link contact-link">Contacter</a></strong></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div id="cookie-banner" style="display: none;">
+            <p>Nous utilisons des cookies pour vous garantir la meilleure expérience sur notre site web. <a href="privacy-policy.html">En savoir plus</a></p>
+            <button onclick="acceptCookies()">J'accepte</button>
+        </div>
+        <script>
+            function checkCookieConsent() {
+                return document.cookie.split(';').some((item) => item.trim().startsWith('cookie_consent='));
+            }
+        
+            function showCookieBanner() {
+                const banner = document.getElementById('cookie-banner');
+                if (!checkCookieConsent()) {
+                    banner.style.display = 'block';
+                }
+            }
+        
+            function acceptCookies() {
+                document.cookie = "cookie_consent=accepted; max-age=" + 60 * 60 * 24 * 365 + "; path=/"; // 1 an
+                const banner = document.getElementById('cookie-banner');
+                banner.style.display = 'none';
+            }
+        
+            document.addEventListener('DOMContentLoaded', showCookieBanner);
+        </script>
+        <div class="header-section">
+            <div class="header-content">
+                <h2>Service</h2>
+                <h1>Social Media</h1>
+                <p>Nous gérons l'intégralité de vos réseaux sociaux,<br> en garantissant une gestion optimale et efficace.</p>
+            </div>
+            <button class="scroll-button" onclick="scrollToContent()">&#8595;</button>
+        </div>
+
+    <script>
+        function scrollToContent() {
+            document.querySelector('.next-section').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+
+
+
+<div class="next-section">
+    <h2 class="fade-in"><span class="text-blue">Les enjeux du Social Media</span></h2>
+    <p class="fade-in"><span class="text-blue">Pourquoi une gestion efficace des réseaux sociaux est cruciale</p></span>
+</div>
+
+<style>
+    .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .next-section {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .next-section h2, .next-section p {
+        margin: 20px 0;
+    }
+    
+    .next-section h2{
+        font-size: 60px;
+        font-weight: 100;
+    }
+
+    .next-section p{
+        font-weight: 100;
+        font-size: 25px;
+    }
+</style>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const fadeInElements = document.querySelectorAll('.fade-in');
+
+        function handleScroll() {
+            fadeInElements.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight) {
+                    el.classList.add('visible');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', handleScroll);
+        handleScroll();
+    });
+</script>
+
+
+<div class="scroll-follow-section">
+    <div class="scroll-follow-left">
+        <p class="large-text"><span class="text-blue"><span class="text-orange">Amarot</span> booste votre <span class="text-orange">présence en ligne</span></span></p>
+    </div>
+    <div class="scroll-follow-right">
+        <p class="large-text">
+            <span class="text-blue">Les réseaux sociaux sont une vitrine essentielle<br> pour votre marque. Selon Hootsuite, 54% des<br> utilisateurs des réseaux sociaux les utilisent pour<br> rechercher des produits.</span>
+        </p>
+        <p class="large-text">
+            <span class="text-blue">Un bon contenu social peut augmenter<br> l'engagement de 20%, ce qui se traduit par<br> plus de conversions et de ventes.</span>
+        </p>
+        <p class="large-text">
+            <span class="text-blue">Des études montrent que les marques qui<br> interagissent régulièrement avec leur audience<br> sur les réseaux sociaux construisent une relation<br> de confiance et de fidélité.</span>
+        </p>
+        <p class="large-text">
+            <span class="text-blue">Avec Amarot, vous bénéficiez d'une stratégie<br> social media sur mesure, augmentant votre<br> visibilité et votre impact.</span>
+        </p>
+    </div>
+</div>
+
+<style>
+.scroll-follow-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.scroll-follow-left {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 100px;
+    align-self: flex-start;
+    max-width: 400px;
+    font-family: "DM Sans", sans-serif;
+    text-align: left;
+    margin-left: 300px; /* Ajustez cette valeur selon votre mise en page */
+}
+
+.scroll-follow-left p {
+    margin: 40px 0; /* Supprimez les marges pour centrer le texte */
+    font-size: 50px; /* Ajuster la taille de la police */
+    font-weight: 100;
+
+}
+
+.scroll-follow-right {
+    flex-grow: 1;
+    margin-left: 50px;
+    font-family: "DM Sans", sans-serif;
+    text-align: center; /* Alignez le texte à gauche */
+}
+
+.scroll-follow-right p {
+    margin: 40px 0; /* Supprimez les marges pour centrer le texte */
+    font-size: 30px; /* Ajuster la taille de la police */
+    font-weight: 100;
+}
+</style>
+
+<script>
+    function scrollToContent() {
+        document.querySelector('.next-section').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const revealElements = document.querySelectorAll('.fade-in-text');
+
+        function reveal() {
+            const windowHeight = window.innerHeight;
+            revealElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    element.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener("scroll", reveal);
+        reveal(); // To check the element on load
+    });
+</script>
+
+<div class="random-images-section">
+    <div class="image-container4">
+        <img src="socialemedia001.jpg" alt="Amarot photo sociale 1" class="random-image">
+        <img src="socialemedia002.jpg" alt="Amarot photo sociale 2" class="random-image">
+        <img src="socialemedia003.jpg" alt="Amarot photo sociale 3" class="random-image">
+        <img src="socialemedia004.jpg" alt="Amarot photo sociale 4" class="random-image">
+        <img src="socialemedia005.jpg" alt="Amarot photo sociale 5" class="random-image">
+    </div>
+</div>
+
+<style>
+
+/* Section des images */
+.random-images-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.random-image {
+    width: 250px; /* Réduire la taille des images */
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.random-image:nth-child(1) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    transform: rotate(-10deg) translateY(-0%);
+}
+
+.random-image:nth-child(2) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    transform: rotate(8deg) translateY(-15%);
+}
+
+.random-image:nth-child(3) {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    transform: rotate(-5deg) translateY(5%);
+}
+
+.random-image:nth-child(4) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    transform: rotate(15deg) translateY(-10%);
+}
+
+.random-image:nth-child(5) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    transform: rotate(-8deg) translateY(-5%);
+}
+</style>
+
+
+<div class="centered-text-button-section fade-in-element">
+    <div class="text-container">
+        <p>Une idée en tête ? Pourquoi pas nous-en parlez ?</p>
+    </div>
+    <div class="button-container">
+        <a href="Contact-Amarot.html" class="action-button">Cliquez ici</a>
+    </div>
+</div>
+<style>
+.centered-text-button-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color:#FF7F50; /* Couleur orange de fond */
+    border-radius: 50px; /* Optionnel : pour arrondir les coins */
+    max-width: 50%;
+    height: 100px;
+    margin: 50px auto; /* Centrer horizontalement et donner un espace vertical */
+    font-size: 40px;
+    margin-top: 150px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.centered-text-button-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.text-container {
+    flex-grow: 1;
+    text-align: left;
+    font-size: 30px;
+    font-family: "DM Sans", sans-serif;
+    color: white;
+}
+
+
+.text-container p{
+    flex-grow: 1;
+    text-align: left;
+    font-size: 30px;
+    font-family: "Lilita One", sans-serif;
+    color: white;
+}
+
+.button-container {
+    margin-left: 20px;
+}
+
+.action-button {
+    background-color: white;
+    color: #219ED5;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "DM Sans", sans-serif;
+    transition: background-color 0.3s;
+}
+
+.action-button:hover {
+    background-color: #1a7db1;
+}
+</style>
+
+<script>
+    function scrollToContent() {
+        document.querySelector('.next-section').scrollIntoView({ behavior: 'smooth' });
+    }
+    
+    document.addEventListener("DOMContentLoaded", function() {
+        const revealElements = document.querySelectorAll('.fade-in-element');
+    
+        function reveal() {
+            const windowHeight = window.innerHeight;
+            revealElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+    
+                if (elementTop < windowHeight - elementVisible) {
+                    element.classList.add('visible');
+                }
+            });
+        }
+    
+        window.addEventListener("scroll", reveal);
+        reveal(); // To check the element on load
+    });
+    </script>
+
+
+<div class="service-intro">
+    <h2>Découvrez plus</h2>
+</div>
+
+<style>
+    .service-intro {
+        text-align: left;
+        margin-left: 305px;
+        margin-top: 100px;
+    }
+</style>
+
+
+<div class="clickable-images-section">
+    <div class="clickable-image">
+        <a href="photographie.html">
+            <img src="photographe1.jpg" alt="Amarot photographie">
+        </a>
+        <div class="image-texts">
+            <p class="title">Photographies</p>
+            <p class="subtitle">Nous gérons la mise à jour quotidienne de vos images uniques, à l'image de votre nom.</p>
+        </div>
+    </div>
+    <div class="clickable-image">
+        <a href="Stratégie.html">
+            <img src="stratégie de marque.jpg" alt="Amarot strategie dec marque">
+        </a>
+        <div class="image-texts">
+            <p class="title">Stratégie Marketing</p>
+            <p class="subtitle">Grâce à notre savoir faire, nous contribuons a l'expension de votre marque.</p>
+        </div>
+    </div>
+</div>
+
+<style>
+.clickable-image {
+    text-align: left; /* Aligne le texte à gauche */
+    width: 600px; /* Largeur fixe pour assurer le même gabarit */
+  }
+</style>
+
+   
+
+
+    <div class="contact-form-background new-background">
+        <div class="content-wrapper">
+            <div class="left-text">
+                <p>Parlez nous de vos projets<br> et de vos envies, nous vous écoutons.</p>
+            </div>
+            <div class="contact-form-section">
+                <form action="submit.php" method="post" class="styled-form">
+                    <label for="name">Nom:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="phone">Téléphone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <label for="subject">Sujet:</label>
+                    <input type="text" id="subject" name="subject">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message"></textarea>
+                    <label for="appointment_date">Date de rendez-vous:</label>
+                    <input type="datetime-local" id="appointment_date" name="appointment_date">
+                    <input type="submit" value="Envoyer">
+                </form>
+            </div>
+        </div>
+    </div>
+       
+  
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.querySelector('form');
+        form.addEventListener('submit', function(event) {
+            // Valider les champs si nécessaire
+            // Exemple : if (!form.name.value) { alert('Name is required'); event.preventDefault(); }
+        });
+    });
+  </script>
+
+
+
+
+
+    <div class="instagram-follow">
+        <h2>Suivez nous sur Instagram</h2>
+    </div>
+    
+    <!-- Section des images cliquables avec titre et texte -->
+    <div class="instagram-images">
+        <div class="instagram-image">
+            <a href="https://www.instagram.com/the_amarot/">
+                <img src="Instagram1.jpg" alt="Image 1">
+            </a>
+            <div class="image-details">
+                <h3>Évasion Asiatique</h3>
+                <p>Voyagez à travers les saveurs avec nos plats<br> asiatiques raffinés, photographiés<br> par les experts d'Amarot.</p>
+            </div>
+        </div>
+        <div class="instagram-image">
+            <a href="https://www.instagram.com/the_amarot/">
+                <img src="Instagram11.jpg" alt="Image 2">
+            </a>
+            <div class="image-details">
+                <h3>Cocktails Colorés</h3>
+                <p>Rafraîchissez vos soirées avec quelques<br> cocktails colorés, immortalisés<br> par l'œil expert d'Amarot.</p>
+            </div>
+        </div>
+        <div class="instagram-image">
+            <a href="https://www.instagram.com/the_amarot/">
+                <img src="Instagram111.jpg" alt="Image 3">
+            </a>
+            <div class="image-details">
+                <h3>Délice Italien</h3>
+                <p>Découvrez l'authenticité de l'Italie avec <br>ces pizzas artisanales, capturées<br> à la perfection par Amarot.</p>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+</main>
+
+<footer>
+    <div class="footer-container">
+        <div class="left-section">
+            <img src="AMAROT_fin_Blanc-removebg-preview.png" alt="Logo de l'entreprise NewTech Entreprise" class="footer-logo">
+            <a href="https://www.instagram.com/the_amarot/" target="_blank" class="instagram-link">
+                <img src="instagram_logo.webp" alt="Instagram">
+            </a>
+        </div>
+        <div class="right-section">
+            <div class="contact-section">
+                <h1>Service</h1>
+                <ul>
+                    <li><a href="photographie.html" class="mentionlegale">Photographie</a></li>
+                    <li><a href="Social-Media-Amarot.html" class="mentionlegale">Social Media</a></li>
+                    <li><a href="Stratégie.html" class="mentionlegale">Stratégie de marque</a></li>
+                    
+                </ul>
+            </div>
+            <div class="contact-section">
+                <h1>Informations</h1>
+                <ul>
+                    <li><a href="A-propos-Amarot.html" class="mentionlegale">À Propos de Nous</a></li>
+                    <li><a href="Contact-Amarot.html" class="mentionlegale">Nous Contacter</a></li>
+                    <li><a href="Mentions Légales.html" class="mentionlegale">Mentions Légales</a></li>
+                    <li><a href="Conditions Générale d'utilisation.html" class="mentionlegale">Conditions Générale d'Utilisation</a></li>
+                    <li><a href="Politique de Confidentialité.html" class="mentionlegale">Politique de Confidentialité</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2024 NewTech Entreprise. Tous droits réservés.</p>
+        
+    </div>
+  </footer>
+
+
+</body>
+</html>
